@@ -21,8 +21,7 @@ Once the CSV files were produced, they were loaded into Postgres along with a CS
 
 
 # Graphs: 
-Graphs can be viewed: 
-https://public.tableau.com/views/NLP_Final_Project/MessageSourceVolume?:embed=y&:embed_code_version=3&:loadOrderID=0&:display_count=y&:origin=viz_share_link
+Graphs can be viewed: https://tabsoft.co/2zfOg89
  
  
 
