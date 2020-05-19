@@ -1,5 +1,4 @@
-# FinalProject
-UCF Machine Learning Final Project
+# Using Natural Language Processing with Naïve Bayes to categorize incoming disaster messages: 
 
 # Overview:
 
