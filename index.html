@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+   
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scripts/style.css" crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Home</a>
+          </div>
+      
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="tables.html">Tables <span class="sr-only">(current)</span></a></li>
+              
+                 </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css"
+  />
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Disaster Messages</h1>
+        <h3>
+          Categorizing disaster messages with Natural Language Processing
+        </h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          
+          <h2>
+            Using Natural Language Processing we sorted messages from direct messages, social postings, and  news stories into disaster categories. Trends and prediction results are visualized in tables here: <a href="tables.html">Tables</a>
+          </h2>
+        </div>
+
+        <div class="col-md-6">
+          <img
+            src="./images/3-ways-tech-entrepreneurs-can-help-grow.jpg"
+            alt="..."
+            class="img-thumbnail"
+          />
+        </div>
+      </div>
+      
+    </div>
+
+    <br />
+    <br />
+   
+  
+    <div class="container" >
+        <div class="row">
+          <div class="col-md-6">
+            <img
+            src="./images/disaster.jpg"
+            alt="..."
+            class="img-thumbnail"
+          />
+
+          </div>
+          <div class="col-md-6">
+          <h2>Data:</h2>
+          <p><a href="https://appen.com/datasets/combined-disaster-response-data/">Data Source</a>          
+            This dataset contains 30,000 messages drawn from disaster events including earthquakes, floods, storms, from news articles, social media and direct messages. The messages span over many years and hundreds of different disasters. The data has been encoded with 36 different categories related to disaster response. Training data had already been identified and was somewhat cleaned. 
+          </p>
+      
+    </div>
+  </div>
+    </div>
+
+
+    </div>
+    <br />
+    <br />
+  
+
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-12">
+            <header class="header">
+        
+               <span class="top"><h2>Sample Messages</h2></span>
+             </header>
+              <div id="table-wrapper">
+                <div id="table-scroll">
+                  <div id="table-area" class="">
+                    <table id="datatable" class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th class="table-head">Source</th>
+                          <th class="table-head">ID</th>
+                          <th class="table-head">Message</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody> 
+                    </table>
+          </div>
+        </div>
+        
+              </div>
+        </div>
+          
+      </div>
+    </div>
+
+    <br />
+    <br />
+  
+    <div class="container" >
+      <div class="row">
+        
+        <div class="col-md-6">
+        <h2>Methodology:</h2>
+        <p> 
+          The machine learning algorithm used was  Naive Bayes rather than using random forest because our NLP needed to be classified to multiple categories rather than just one. Google Colab was used to run notebooks with PySpark. One the machine was trained on one category it was replicated to be able to run 4 different training/prediction models at once. Each category was trained and tested for accuracy and output 36 CSV files that included the ID of the message, how it was categorized and what our machine predicted. 
+           
+        </p>
+    
+        </div>
+      <div class="col-md-6">
+    <img
+    src="./images/disaster2.jpg"
+    alt="..."
+    class="img-thumbnail"
+  />
+
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  <br />
+    <br />
+    <br />
+   
+
+  <div class="container" >
+    <div class="row">
+
+      <div class="col-md-6">
+        <img
+        src="./images/disaster3.jpeg"
+        alt="..."
+        class="img-thumbnail"/>
+      
+          </div>
+      
+      <div class="col-md-6">
+      <h2>Results:</h2>
+      <p> 
+        When calculating the accuracy in Google Colab, the results we suspiciously high, between 90-99% accurate predictions from the machine on most categories. This was due to the 0 values being so numerous and calculated correctly. 
+        Looking at the data through a table visualization, we discovered that the ratio between how many messages our machine predicted to be in the category versus how many messages were in the category varied wildly. Several variables impacted the accuracy of the machine, mainly how many messages were in each category for the machine to train on initially. With less categories to sort into or with more messages to sort, the accuracy of the machine can be improved. 
+                  
+      </p>
+  
+      </div>
+ 
+  </div>
+</div>
+
+
+</div>
+    
+
+
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="scripts/data.js" crossorigin="anonymous"
+    ></script>
+    <script src="scripts/app.js" crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
