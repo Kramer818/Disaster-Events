@@ -13,6 +13,8 @@ html {
 
 body {
   padding-bottom: 300px;
+  padding-left: 100px;
+  padding-right: 100px;
   height: 100%;
 }
 
@@ -26,7 +28,11 @@ h1 {
   text-shadow: black;
   font-family: "Open Sans", sans-serif;
 }
-
+h2 {
+  text-align: center;
+  text-shadow: black;
+  font-family: "Open Sans", sans-serif;
+}
 p {
   font-size: large;
 }
@@ -35,6 +41,10 @@ h3 {
   text-align: center;
   text-shadow: black;
   font-family: "Open Sans", sans-serif;
+}
+
+h5 {
+  font-size: medium;
 }
 
 tbody {
@@ -73,4 +83,9 @@ tbody {
 container-fluid {
   padding-left: 100px;
   align-items: center;
+}
+
+hr {
+  height: 20px;
+  background-color: #333;
 }
