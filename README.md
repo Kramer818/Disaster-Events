@@ -22,7 +22,9 @@ Once the CSV files were produced, they were loaded into Postgres along with a CS
 # Graphs: 
 Graphs can be viewed: https://tabsoft.co/2zfOg89
  
+ ![Prediction Comparison](New Folder/Prediction Comparison.png)
  
+ ![Message Source Volume](New Folder/Message Source Volume.png)
 
 
 
